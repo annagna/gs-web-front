@@ -6,19 +6,36 @@ import Hero from './components/Hero.jsx'
 import Sobre from './components/Sobre.jsx'
 
 import Footer from './components/Footer.jsx'
-
+import { useState } from 'react';
+import MedicationManager from './components/MedicationManager.jsx';
 
 export default function App() {
+  const [mostrarDemo, setMostrarDemo] = useState(false);
+
   return (
     <div className="min-h-screen">
-      <Header />
+      <Header onTry={() => setMostrarDemo(true)} />
       <main>
-        <Hero />
-        <Sobre />
-        <Funcionalidades />
+        {mostrarDemo ? (
+          <>
+            <button
+              onClick={() => setMostrarDemo(false)}
+              className="m-4 rounded-lg bg-indigo-600 px-4 py-2 text-white"
+            >
+              Voltar ao início
+            </button>
 
-        <Depoimentos />
-        <Contato />
+            <MedicationManager />
+          </>
+        ) : (
+          <>
+            <Hero />
+            <Sobre />
+            <Funcionalidades />
+            <Depoimentos />
+            <Contato />
+          </>
+        )}
       </main>
       <Footer />
     </div>

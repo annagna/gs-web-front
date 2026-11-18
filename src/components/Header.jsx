@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Ícones do Lucide que você já está usando
 
-export default function Header() {
+export default function Header({ onTry }) {
   // Estado que controla se o menu mobile está aberto (true) ou fechado (false)
   const [menuAberto, setMenuAberto] = useState(false);
 
@@ -24,9 +24,12 @@ export default function Header() {
 
           {/* Botão Entrar Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#entrar" className="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
-              Entrar
-            </a>
+<button
+  onClick={onTry}
+  className="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700"
+>
+  Experimentar o iPills
+</button>
           </div>
 
           {/* Botão Mobile */}
@@ -56,9 +59,15 @@ export default function Header() {
             <a href="#entrar" className="text-center text-slate-700 hover:text-indigo-600 py-2 font-medium">
               Entrar
             </a>
-            <a href="#cadastrar" className="text-center bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700">
-              Cadastrar
-            </a>
+<button
+  onClick={() => {
+    setMenuAberto(false);
+    onTry();
+  }}
+  className="w-full text-center bg-indigo-600 text-white py-2 rounded-lg"
+>
+  Experimentar o iPills
+</button>
           </div>
         </div>
       )}
