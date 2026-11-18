@@ -24,13 +24,13 @@ const DEPOIMENTOS = [
 
 export default function Depoimentos() {
   return (
-    <section id="depoimentos" className="py-24">
+    <section id="depoimentos" className="py-24 bg-yellow-100">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="font-display text-4xl md:text-5xl text-ink max-w-md">
           Quem já pediu, conta.
         </h2>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
+        <div className="mt-14 grid md:grid-cols-3 gap-6 bg-purple-100 rounded-3xl overflow-hidden hoover:bg-purple-100 transition-colors">
           {DEPOIMENTOS.map((d) => (
             <figure
               key={d.nome}
@@ -40,7 +40,7 @@ export default function Depoimentos() {
                 “{d.texto}”
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-coral text-cream flex items-center justify-center font-medium text-sm">
+                <div className="w-10 h-10 rounded-full bg-white text-purple-600 flex items-center justify-center font-medium text-sm">
                   {d.iniciais}
                 </div>
                 <div>
