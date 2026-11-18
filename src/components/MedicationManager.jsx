@@ -59,23 +59,25 @@ export default function MedicationManager() {
   }
 
   return (
-    <section className="mx-auto grid w-full max-w-5xl gap-6 px-4 py-10" aria-labelledby="medication-title">
+    <section className="min-h-screen bg-[#fffaf0] px-4 py-10" aria-labelledby="medication-title">
+      <div className="mx-auto grid w-full max-w-5xl gap-6">
       <header>
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">Demonstração funcional</p>
-        <h2 id="medication-title" className="mt-1 text-2xl font-bold text-stone-900">Meus medicamentos</h2>
-        <p className="mt-2 text-sm text-stone-600">Cadastre e organize os medicamentos e seus horários.</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-indigo-700">Demonstração funcional</p>
+        <h2 id="medication-title" className="mt-1 text-2xl font-bold text-slate-900">Meus medicamentos</h2>
+        <p className="mt-2 text-sm text-slate-600">Cadastre e organize os medicamentos e seus horários.</p>
       </header>
 
       <MedicationForm values={values} errors={errors} onChange={handleChange} onSubmit={handleSubmit} onCancel={cancelEditing} editing={editingId !== null} saving={saving} />
 
-      {feedback && <p role="status" className="rounded-lg bg-emerald-50 p-3 text-sm text-emerald-800">{feedback}</p>}
+      {feedback && <p role="status" className="rounded-lg bg-indigo-50 p-3 text-sm text-indigo-800">{feedback}</p>}
       {error && <div role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-700"><p>{error}</p><button onClick={reload} className="mt-2 font-semibold underline" type="button">Tentar novamente</button></div>}
 
       <div className="flex items-center justify-between gap-3">
-        <h3 className="text-lg font-semibold text-stone-800">Medicamentos cadastrados</h3>
-        <span className="text-sm text-stone-500">{medications.length} registro(s)</span>
+        <h3 className="text-lg font-semibold text-slate-800">Medicamentos cadastrados</h3>
+        <span className="text-sm text-slate-500">{medications.length} registro(s)</span>
       </div>
-      {loading ? <p className="text-sm text-stone-500">Carregando medicamentos...</p> : <MedicationList medications={medications} onEdit={startEditing} onDelete={handleDelete} disabled={saving} />}
+      {loading ? <p className="text-sm text-slate-500">Carregando medicamentos...</p> : <MedicationList medications={medications} onEdit={startEditing} onDelete={handleDelete} disabled={saving} />}
+      </div>
     </section>
   );
 }

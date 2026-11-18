@@ -6,4 +6,25 @@
   --color-beige: #F5F5DC;
   --color-gray-light: #E0E0E0;
   --color-off-white: #F9F9F9;
+  --lilac: #E6E6FA;
+
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #fff8d8 0%, #fff4bd 100%);
+}
+
+.hero-content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-copy p {
+  line-height: 1.7;
+}
+
+.hero-actions {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }

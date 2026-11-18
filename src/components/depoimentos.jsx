@@ -1,3 +1,4 @@
+
 const DEPOIMENTOS = [
   {
     nome: 'Tatiana Silva',
@@ -26,23 +27,27 @@ export default function Depoimentos() {
   return (
     <section id="depoimentos" className="py-24 bg-yellow-100">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="font-display text-4xl md:text-5xl text-ink max-w-md">
-          Quem já pediu, conta.
+                <p className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-indigo-700">
+          Cuidado que cabe na rotina
+        </p>
+        <h2 className="font-semibold text-4xl md:text-5xl ">
+          Quem experimenta, conta.
         </h2>
-
-        <div className="mt-14 grid md:grid-cols-3 gap-6 bg-purple-100 rounded-3xl overflow-hidden hover:bg-purple-100 transition-colors">
+        <div className="mt-14 grid md:grid-cols-3 gap-8">
           {DEPOIMENTOS.map((d) => (
             <figure
               key={d.nome}
-              className="rounded-2xl bg-gold/10 p-7 flex flex-col justify-between"
+              className="rounded-2xl bg-purple-100 p-7 flex flex-col justify-between"
             >
               <blockquote className="text-ink/80 leading-relaxed">
                 “{d.texto}”
               </blockquote>
+
               <figcaption className="mt-6 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-white text-purple-600 flex items-center justify-center font-medium text-sm">
                   {d.iniciais}
                 </div>
+
                 <div>
                   <p className="text-sm font-medium text-ink">{d.nome}</p>
                   <p className="text-xs text-ink/50">{d.cidade}</p>

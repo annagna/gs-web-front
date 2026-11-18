@@ -8,7 +8,7 @@ export default function MedicationList({
 }) {
   if (!medications.length) {
     return (
-      <div className="border border-dashed border-stone-300 p-8 text-center text-stone-500">
+      <div className="rounded-2xl border border-dashed border-violet-200 bg-white/70 p-8 text-center text-slate-500">
         Nenhum medicamento cadastrado ainda
       </div>
     );

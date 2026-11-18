@@ -27,7 +27,7 @@ export default function Header({ onTry }) {
           <div className="hidden md:flex items-center space-x-4">
 <button
   onClick={onTry}
-  className="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700"
+  className="bg-indigo-600 text-white px-4 py-2 rounded-full font-medium hover:bg-indigo-700"
 >
   Experimentar o iPills
 </button>
