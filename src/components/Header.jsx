@@ -18,7 +18,8 @@ export default function Header({ onTry }) {
           {/* Menu de Navegação Desktop */}
           <nav className="hidden md:flex space-x-8">
             <a href="#sobre" className="text-slate-700 hover:text-indigo-600 font-medium transition-colors">Sobre</a>
-            <a href="#loja" className="text-slate-700 hover:text-indigo-600 font-medium transition-colors">Loja</a>
+            <a href="#funcionalidades" className="text-slate-700 hover:text-indigo-600 font-medium transition-colors">Funcionalidades</a>
+            <a href="#depoimentos" className="text-slate-700 hover:text-indigo-600 font-medium transition-colors">Histórias</a>
             <a href="#contato" className="text-slate-700 hover:text-indigo-600 font-medium transition-colors">Contato</a>
           </nav>
 

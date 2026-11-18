@@ -54,4 +54,13 @@ A Demonstracao:
 
 -------------- TECNOLOGIAS UTILIZADAS -------------------
 
+React
+Vite
+JavaScript
+CSS
+Tailwind CSS
+MockAPI para salvar e retornar os dados dos medicamentos 
+
+---------
+
 

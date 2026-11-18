@@ -30,7 +30,7 @@ export default function Depoimentos() {
           Quem já pediu, conta.
         </h2>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-6 bg-purple-100 rounded-3xl overflow-hidden hoover:bg-purple-100 transition-colors">
+        <div className="mt-14 grid md:grid-cols-3 gap-6 bg-purple-100 rounded-3xl overflow-hidden hover:bg-purple-100 transition-colors">
           {DEPOIMENTOS.map((d) => (
             <figure
               key={d.nome}

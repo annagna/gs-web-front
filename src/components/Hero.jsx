@@ -25,7 +25,7 @@ export default function Hero() {
           Iniciação da compra
         </a>
         <a
-          href="#"
+          href="#contato"
           className="inline-flex items-center rounded-full border border-slate-300 bg-white text-slate-800 font-medium px-7 py-3.5 hover:border-slate-400 transition-colors"
         >
           Fale conosco
