@@ -1,3 +1,25 @@
+# Documentando o uso de Inteligência Artificial
+
+## 1. Ferramentas utilizadas
+
+Durante o desenvolvimento do projeto iPills, foi utilizada a ferramentas como Manus, ChatGPT, Claude como apoio técnico e documental.
+
+As ferramentas foram utilizadas para:
+
+- Analisar a estrutura do projeto.
+- Auxílio na estruturação do código JavaScript e React.
+- Apoio na organização da lógica de cadastro, consulta, edição e exclusão de medicamentos.
+- Orientação para integração com uma API externa utilizando MockAPI.
+- Explicar as alterações realizadas.
+- Identificação e correção de problemas de integração entre componentes.
+- Sugestões de melhorias na interface e na organização dos componentes.
+
+
+A Inteligência Artificial não foi utilizada para substituir completamente o trabalho da equipe. A equipe definiu a proposta do iPills, suas funcionalidades, identidade visual e objetivos. As sugestões geradas foram analisadas, adaptadas e validadas pelo grupo.
+
+---
+
+## 2. Alguns exemplos de solicitações realizadas:
 
 Pergunta
 como eu configuro a api?
@@ -81,3 +103,16 @@ if (!medications.length) {
 
 
 Você escreveu lenght em vez de length. Como essa propriedade não existe, o JavaScript retorna undefined, e a condição acaba sendo verdadeira mesmo quando existem medicamentos cadastrados.
+
+
+## 3. Análise crítica
+
+A utilização da Inteligência Artificial contribuiu para agilizar o desenvolvimento do projeto, principalmente na compreensão de conceitos, na organização dos arquivos e na resolução de problemas técnicos.
+
+A ferramenta também facilitou o entendimento da comunicação entre o front-end e uma API externa.
+
+Entretanto, foi necessário analisar as respostas, compreender os códigos sugeridos e realizar adaptações para atender às necessidades específicas do iPills.
+
+A Inteligência Artificial apresentou algumas limitações, como sugestões que precisavam ser adaptadas à estrutura existente do projeto e orientações que dependiam de testes no ambiente real.
+
+Concluímos que a IA foi uma ferramenta de apoio importante, mas não substituiu a participação da equipe, a compreensão dos conceitos e a validação do funcionamento da aplicação.
