@@ -14,6 +14,13 @@ As ferramentas foram utilizadas para:
 - Identificação e correção de problemas de integração entre componentes.
 - Sugestões de melhorias na interface e na organização dos componentes.
 
+Foi também usado as ferramentas Gemini e, mais uma vez, o ChatGPT para apoio técnico.
+Elas foram utilizadas para:
+- Auxílio na configuração do Tailwind e Vite (ocorreu problema na instalação)
+-Apoio na estruturação do Front, como na duvida em qual elemento usar.
+-Explicar qual erro estava ocorrendo
+- Auxilio na paleta de cores do site
+- Melhorar a qualidade da imagem para que esteja adquado ao site.
 
 A Inteligência Artificial não foi utilizada para substituir completamente o trabalho da equipe. A equipe definiu a proposta do iPills, suas funcionalidades, identidade visual e objetivos. As sugestões geradas foram analisadas, adaptadas e validadas pelo grupo.
 
