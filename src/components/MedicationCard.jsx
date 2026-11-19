@@ -12,7 +12,7 @@ export default function MedicationCard({ medication, onEdit, onDelete, disabled 
       {medication.notes && <p className="mt-1 text-sm text-slate-500">{medication.notes}</p>}
       <div className="mt-4 flex gap-2">
         <button type="button" disabled={disabled} onClick={() => onEdit(medication)} className="rounded-full border border-indigo-200 px-3 py-1.5 text-sm text-indigo-700 transition hover:bg-indigo-50">Editar</button>
-        <button type="button" disabled={disabled} onClick={() => onDelete(medication)} className="rounded-lg border border-red-200 px-3 py-1.5 text-sm text-red-700">Excluir</button>
+        <button type="button" disabled={disabled} onClick={() => onDelete(medication)} className="rounded-lg border border-red-200 px-3 py-1.5 text-sm text-red-700 hover:bg-indigo-50">Excluir</button>
       </div>
     </article>
   );

@@ -43,10 +43,10 @@ Landing Page:
 - Depoimentos
 - Formulario de contato
 
-A Demonstracao:
+A Demonstração:
 - Cadastrar medicamentos
 - Informar dosagem
-- Frequencia, horario e observacoes
+- Frequência, horário e observações
 - Visualizar os medicamentos cadastrados
 - Editar e excluir os medicamentos cadastrados
 - Receber mensagens de sucesso ou erro

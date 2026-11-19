@@ -3,7 +3,7 @@ import { CheckCircle2, Send } from 'lucide-react'
 export default function Hero() {
   return (
     /* Sobre - html */
-    <div className="bg-cream py-16">
+    <div id="sobre" className="bg-cream py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-indigo-700">
           Por que o iPills existe
