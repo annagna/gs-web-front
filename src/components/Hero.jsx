@@ -26,14 +26,8 @@ export default function Hero() {
               href="#contato"
               className="inline-flex items-center gap-3 rounded-full bg-indigo-600 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-indigo-200 transition hover:bg-indigo-700"
             >
-              Testar a demonstração
-              <ArrowRight className="h-5 w-5" />
-            </a>
-            <a
-              href="#sobre"
-              className="inline-flex items-center rounded-full bg-white px-7 py-4 text-base font-semibold text-slate-800 shadow-sm ring-1 ring-slate-200 transition hover:ring-indigo-300"
-            >
               Conhecer o projeto
+              <ArrowRight className="h-5 w-5" />
             </a>
           </div>
 

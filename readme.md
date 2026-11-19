@@ -3,6 +3,7 @@
 
 O iPills è uma solucao composta por uma caixa inteligente de medicamentos e um aplicativo mobile. Com o objetivo de ajudar pessoas idosas, familiares, 
 cuidadores e profissionais de saude a organizar horarios, doses e registros de medicacao.
+O projeto foi desenvolvido com React, buscando aplicar componentização, React Hooks, Custom Hooks e integração com uma API externa.
 
 ------EQUIPE------
 
@@ -59,8 +60,37 @@ Vite
 JavaScript
 CSS
 Tailwind CSS
-MockAPI para salvar e retornar os dados dos medicamentos 
+MockAPI 
 
----------
+--------- Pré-requisitos ----------------------------
+
+Para executar o projeto, é necessário ter:
+
+Node.js instalado.
+npm instalado junto com o Node.js.
+Visual Studio Code ou outro editor de código.
+Conexão com a internet para acessar a API externa.
+
+Instale as dependências:
+
+npm install
+
+Configuração da API:
+
+O projeto utiliza a MockAPI como API REST externa para armazenar e gerenciar os registros de medicamentos.
+O arquivo .env deve estar na raiz do projeto e conter a variável- VITE_MEDICATION_API_URL=https://6afddab43a0e70bc8d52e73a.mockapi.
+
+Execução do projeto:
+npm run dev
+
+Para verificar a compilação de produção, execute:
+
+npm run build
+
+link repositorio no github:
+https://github.com/annagna/gs-web-front
+
+
+Deploy Aplicação publicada na Vercel:
 
 

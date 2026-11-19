@@ -20,7 +20,7 @@ export default function App() {
           <>
             <button
               onClick={() => setMostrarDemo(false)}
-              className="m-4 rounded-lg bg-indigo-600 px-4 py-2 text-white"
+              className="mx-auto mt-6 mb-0 block rounded-full bg-indigo-600 px-5 py-2.5 text-white shadow-sm transition hover:bg-indigo-700"
             >
               Voltar ao início
             </button>
