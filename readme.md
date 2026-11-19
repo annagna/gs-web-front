@@ -39,10 +39,10 @@ O sistema busca oferecer mais autonomia para o usuario e mais tranquilidade para
 Landing Page:
 - Proposta do iPills
 - Imagem REAL do produto
-- Secao sobre o problema 
+- Seção sobre o problema 
 - Funcionalidades
 - Depoimentos
-- Formulario de contato
+- Formulário de contato
 
 A Demonstração:
 - Cadastrar medicamentos
