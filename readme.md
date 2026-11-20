@@ -1,16 +1,16 @@
 --------------------------iPills-------------------------------------------
 
 
-O iPills è uma solucao composta por uma caixa inteligente de medicamentos e um aplicativo mobile. Com o objetivo de ajudar pessoas idosas, familiares, 
-cuidadores e profissionais de saude a organizar horarios, doses e registros de medicacao.
+O iPills é uma solução composta por uma caixa inteligente de medicamentos e um aplicativo mobile. Com o objetivo de ajudar pessoas idosas, familiares, 
+cuidadores e profissionais de saúde a organizar horários, doses e registros de medicação.
 O projeto foi desenvolvido com React, buscando aplicar componentização, React Hooks, Custom Hooks e integração com uma API externa.
 
 ------EQUIPE------
 
 -Giulia Stella
+-Anna Giazzi
 -Erick Diego
 -Rafael Morales
--Anna Giazzi
 -Lucas Octaviano
 
 ----- O PROBLEMA ------
@@ -22,7 +22,7 @@ Nosso principal público são pessoas idosas que moram sozinhas ou não possuem 
 Diante desse cenário, desenvolvemos o iPills, uma solução que busca proporcionar mais autonomia, organização e segurança na rotina de medicamentos.
 
 
--------- SOLUCAO ------
+-------- SOLUÇÃO ------
 
 A proposta do iPills é unir:
 - Caixa fisica e inteligente
@@ -94,3 +94,29 @@ https://github.com/annagna/gs-web-front
 Deploy Aplicação publicada na Vercel:
 
 
+------------ Ficha ------------------
+
+- Nome: IPills
+- Cidade e bairro: São Paulo, [bairro]
+- Cidadão beneficiado: idosos que moram sozinhos ou sem acompanhamento diário, e seus familiares e cuidadores
+- Problema, em uma frase: idosos que usam vários medicamentos esquecem doses e deixam o estoque acabar, e a família só descobre quando algo já deu errado
+- Como funciona: caixa inteligente (ESP32) + aplicativo; esta parte em Python é o "cérebro" que processa os dados e decide os alertas
+- O que cada parte faz: Front e Web = demonstração do app; ESP32 = alertas na caixa; Matemática = modelo de concentração do remédio
+- Repositório: [link do GitHub]
+- Indicador de impacto: % de doses tomadas no horário (adesão)
+- ODS conectados: 3 (Saúde e bem-estar) e 10 (Redução das desigualdades)
+
+------------------------ APLICAÇÃO NO PROJETO --------------------------------------
+
+O que foi gerado ou alterado:
+ - Interface e Estilização: Auxílio na criação de um cabeçalho responsivo (Header com menu mobile/desktop), alinhamento da imagem ao lado do texto no banner (Flexbox) e correção de classes do Tailwind (criação de código para cores inexistentes por padrões como bg-slate-50 e bg-cream).
+- Migração para React (.jsx): Reestruturação do index.html para carregar o src/main.jsx e organização dos componentes no src/App.jsx (Header, Hero, Sobre, Funcionalidades, Depoimentos, Contato e Footer).
+- Configuração do Ambiente: Auxílio na criação do vite.config.js integrando os plugins do React e do Tailwind CSS v4, além do ajuste da importação global do style.css.
+
+---------------------------- VALIDAÇÃO DAS RESPOSTAS --------------------------------------------------
+
+Foi utilizado para testes e ajustes, como:
+- Testes Visuais: Identificação, correção e explicação do fundo escuro herdado do template do Vite, imagem desalinhada por falta de flex e botões sem estilo devido ao uso incorreto de className em HTML puro.
+- Depuração no Terminal (Vite): Instalação de pacotes ausentes (react, react-dom, @vitejs/plugin-react e lucide-react), correção do caminho do arquivo CSS e remoção de importação duplicada no App.jsx.
+- Depuração no Navegador (DevTools F12): Resolução de tela branca identificando a falta de export default e useState no Contato.jsx, além da remoção da tag de componente inexistente (<Pratos/>).
+- Controle de Versão (Git): Correção dos erros que apareciam e auxílio para fazer os commits para o GitHub.
